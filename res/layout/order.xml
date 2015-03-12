@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="124dp" >
+
+    <TextView
+        android:id="@+id/displacement"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left|center_vertical"
+        android:textColor="#1c1311"
+        android:textSize="16dp"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/order_commit"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_alignBaseline="@id/displacement"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:background="#fff000"
+        android:gravity="center"
+        android:text="@string/order_commit"
+        android:textColor="#1c1311"
+        android:textSize="12dp"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/displacement"
+        android:layout_below="@id/displacement"
+        android:layout_marginTop="24dp"
+        android:gravity="left|center_vertical"
+        android:textColor="#7d7f87"
+        android:textSize="16dp"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/lvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/level"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/level"
+        android:gravity="center"
+        android:textColor="#7d7f87"
+        android:textSize="16dp"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/level"
+        android:layout_alignLeft="@id/order_commit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:textColor="#7d7f87"
+        android:textSize="16dp"
+        tools:ignore="SpUsage" />
+
+</RelativeLayout>

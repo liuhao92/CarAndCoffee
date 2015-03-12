@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_address"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0px" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="#F2F2F2"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/btn_address_add"
+            android:layout_width="136dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="24dp"
+            android:background="#FFF000"
+            android:text="@string/add_address"
+            android:textColor="#1c1311"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

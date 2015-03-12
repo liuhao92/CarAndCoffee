@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.carandcoffee"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.carandcoffee.application.CACApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.carandcoffee.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.carandcoffee.MycarActivity"
+            android:label="MycarActivity" >
+        </activity>
+        <activity
+            android:name="com.carandcoffee.LoginActivity"
+            android:label="LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.carandcoffee.MyorderActivity"
+            android:label="MyorderActivity" >
+        </activity>
+        <activity
+            android:name="com.carandcoffee.OrderdetailsActivity"
+            android:label="OrderdetailsActivity" >
+        </activity>
+        <activity
+            android:name="com.carandcoffee.MyaccountActivity"
+            android:label="MyaccountActivity" >
+        </activity>
+        <activity
+            android:name="com.carandcoffee.EditaccountActivity"
+            android:label="EditaccountActivity" >
+        </activity>
+        <activity android:name="com.carandcoffee.ServiceActivity" />
+        <activity android:name="com.carandcoffee.SpaceImageDetailActivity" />
+
+        <service android:name="com.avos.avoscloud.PushService" />
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.carandcoffee.custom.Myreceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.avoscloud.session.action" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.carandcoffee.PromotionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.carandcoffee.OrderCommitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.carandcoffee.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.carandcoffee.EditAddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.carandcoffee.AddAddressActivity" />
+        <activity android:name="com.carandcoffee.start_activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.carandcoffee.youli_activity" />
+    </application>
+
+</manifest>

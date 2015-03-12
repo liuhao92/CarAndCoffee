@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/c_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="@string/contacts_title"
+            android:textColor="#7d7f87"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/add_constacts"
+            android:layout_width="0px"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_edit_bg"
+            android:gravity="left|center_vertical"
+            android:textColor="#1c1311"
+            android:textSize="16dp"
+            tools:ignore="SpUsage,TextFields" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/c_phone_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/c_title"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="@string/phone_tile"
+            android:textColor="#7d7f87"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/add_phone"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/text_edit_bg"
+            android:textColor="#1c1311"
+            android:textSize="16dp"
+            tools:ignore="SpUsage,TextFields" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/c_address_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/c_phone_title"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="@string/service_address_title"
+            android:textColor="#7d7f87"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/add_address"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/text_edit_bg"
+            android:textColor="#1c1311"
+            android:textSize="16dp"
+            tools:ignore="SpUsage,TextFields" />
+    </LinearLayout>
+
+</RelativeLayout>

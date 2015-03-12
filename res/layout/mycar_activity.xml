@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res/com.carandcoffee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/loginsucced"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#F2F2F2" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="你还没有登录哟~"
+                android:textColor="@drawable/text_color_gray"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/The_app_main_color"
+                android:onClick="Itemclick"
+                android:text="@string/login_current" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_succed_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#F2F2F2"
+            android:descendantFocusability="blocksDescendants"
+            android:onClick="Itemclick"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="96dp"
+                android:text="@string/nickname_text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/yonghuming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/textView3" 
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/order_list_right_bg" />
+
+            <com.carandcoffee.view.CircleImageView
+                android:id="@+id/head_icon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:onClick="Itemclick"
+                android:src="@drawable/head_icon"
+                app1:border_width="0dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tijian_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/loginsucced"
+        android:layout_centerHorizontal="true" 
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/checklist_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/check_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:text="@string/my_car_check_list"
+                android:textColor="@drawable/text_color_black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/check_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                
+                android:textColor="@drawable/text_color_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/checklist_layout"
+            android:layout_centerHorizontal="true" >
+
+            <ListView
+                android:id="@+id/checklist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:divider="@drawable/body_color_gray"
+                android:dividerHeight="2dip" >
+            </ListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">车与咖啡</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="service_booking">Service Booking</string>
+    <string name="service_booking_cn">我要\n服务</string>
+    <string name="my_car">My Car</string>
+    <string name="my_car_cn">我的\n爱车</string>
+    <string name="order_list">Order List</string>
+    <string name="order_list_cn">我的\n订单</string>
+    <string name="promotion">Promotion</string>
+    <string name="promotion_cn">优惠\n套餐</string>
+    <string name="promotion_title">优惠套餐</string>
+    <string name="customer_service">联系客服</string>
+    <string name="edit_account">修改用户名</string>
+    <string name="login">登录</string>
+    <string name="login_current">马上登录</string>
+    <string name="exit_login">退出登录</string>
+    <string name="my_account">我的账户</string>
+    <string name="my_car_string">我的爱车</string>
+    <string name="my_order">我的订单</string>
+    <string name="order_detail">订单详情</string>
+    <string name="photo">相册</string>
+    <string name="camera">拍照</string>
+    <string name="comfirm">确认</string>
+    <string name="get_number_edit_hini">请输入您的手机号码</string>
+    <string name="input_number_edit_hini">请输入您的登陆码</string>
+    <string name="get_number">获取验证码</string>
+    <string name="modification">修改</string>
+    <string name="nickname_text">账户名 :</string>
+    <string name="dont_have_login">你还没有登录哟~请到我的爱车里登录</string>
+    <string name="my_car_check_list">我的爱车免费检查项目体检单</string>
+    <string name="order_details_name_text">联系人:</string>
+    <string name="order_details_address_text">服务地址:</string>
+    <string name="order_details_date_text">预约时间:</string>
+    <string name="order_details_car_info">车辆信息:</string>
+    <string name="order_details_car_model_text">车型:</string>
+    <string name="order_details_car_licence_text">牌照:</string>
+    <string name="order_details_car_displacement_text">排量:</string>
+    <string name="order_details_combo_text">套餐:</string>
+    <string name="cancel_voice">手指上滑,取消发送</string>
+    <string name="drop_down_list_header_default_text">Click to refresh&#8230;</string>
+    <string name="drop_down_list_header_pull_text">Drop Down to refresh&#8230;</string>
+    <string name="drop_down_list_header_release_text">Release to refresh&#8230;</string>
+    <string name="drop_down_list_header_loading_text">Loading&#8230;</string>
+    <string name="drop_down_list_footer_default_text">More</string>
+    <string name="drop_down_list_footer_loading_text">Loading&#8230;</string>
+    <string name="drop_down_list_footer_no_more_text">No More</string>
+    <string name="image_content">Image</string>
+
+    <string-array name="checklist_name">
+        <item>1.车辆外观和漆面检查</item>
+        <item>2.方向助力油壶油液</item>
+        <item>3.水箱防冻液液面</item>
+        <item>4.制动液油壶液面及油品检测</item>
+        <item>5.雨刮水水壶页面</item>
+        <item>6.雨刮器及雨刮器工作状况检查</item>
+        <item>7.传动皮带 涨紧度和老化程度检查</item>
+        <item>8.各轮胎外观检查</item>
+        <item>10.各轮胎外观检查</item>
+        <item>11.各轮胎外观检查</item>
+        <item>12.各轮胎外观检查</item>
+        <item>12.各轮胎外观检查</item>
+        <item>12.各轮胎外观检查</item>
+    </string-array>
+
+    <string name="order_commit">下单</string>
+    <string name="input_contacts_info">填写联系人信息</string>
+    <string name="contacts_title">联系人　:</string>
+    <string name="service_address_title">服务地址:</string>
+    <string name="preset_time_title">预约时间:</string>
+    <string name="btn_config_commit_title">确认提交</string>
+    <string name="y_m_d">年月日</string>
+    <string name="current_time">当天具体时间</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+    <string name="add_address">添加新地址</string>
+    <string name="default_address">[默认]</string>
+    <string name="edit_service_address">编辑服务地址</string>
+    <string name="choose_service_address">编辑服务地址</string>
+    <string name="address_edit">编辑</string>
+    <string name="save">保存</string>
+    <string name="phone_tile">手机号　:</string>
+    <string name="del_address">删除收货地址</string>
+    <string name="empty">无</string>    
+    <string name="set_default_address">设为默认地址</string> 
+    <string name="not_constacts">联系人不能为空</string>   
+    <string name="not_phone">电话不能为空</string>   
+    <string name="not_address">地址不能为空</string>   
+</resources>

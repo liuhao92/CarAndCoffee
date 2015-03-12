@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+ 
+    <RelativeLayout
+        android:id="@+id/order_details_person_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/text_color_black"
+        android:textColor="@drawable/The_app_main_color" >
+
+        <TextView
+            android:id="@+id/order_details_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/order_details_name_text"
+            android:textColor="@drawable/The_app_main_color" />
+
+        <TextView
+            android:id="@+id/order_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_details_name_text"
+            android:layout_toRightOf="@+id/order_details_name_text"
+            
+            android:textColor="@drawable/The_app_main_color" />
+
+        <TextView
+            android:id="@+id/order_details_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/order_details_name"
+            android:layout_alignBottom="@+id/order_details_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            
+            android:textColor="@drawable/The_app_main_color" />
+
+        <TextView
+            android:id="@+id/order_details_address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/order_details_name_text"
+            android:layout_centerVertical="true"
+            android:text="@string/order_details_address_text"
+            android:textColor="@drawable/The_app_main_color" />
+
+        <TextView
+            android:id="@+id/order_details_address"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/order_details_address_text"
+            android:layout_alignBottom="@+id/order_details_address_text"
+            android:layout_toRightOf="@+id/order_details_address_text"
+           
+            android:textColor="@drawable/The_app_main_color" />
+
+        <TextView
+            android:id="@+id/order_details_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/order_details_address_text"
+            android:layout_below="@+id/order_details_address_text"
+            android:layout_marginTop="28dp"
+            android:text="@string/order_details_date_text"
+            android:textColor="@drawable/The_app_main_color" />
+
+        <TextView
+            android:id="@+id/order_details_date_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/order_details_date_text"
+            android:layout_alignBottom="@id/order_details_date_text"
+            android:layout_toRightOf="@id/order_details_date_text"
+           
+            android:textColor="@drawable/The_app_main_color" />
+
+        <TextView
+            android:id="@+id/order_details_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/order_details_date_year"
+            android:layout_alignBottom="@+id/order_details_date_year"
+            android:layout_alignRight="@+id/order_details_phone"
+            
+            android:textColor="@drawable/The_app_main_color" />
+
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@drawable/The_app_main_color"
+            android:layout_marginTop="5dp"
+           android:text="订单号:2104055555" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_details_car_layout"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/order_details_person_layout" >
+
+        <TextView
+            android:id="@+id/order_details_car_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/order_details_car_info"
+            android:textSize="16sp"
+            android:textColor="@drawable/text_color_black" />
+
+        <TextView
+            android:id="@+id/order_details_car_licence_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_details_car_model_text"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/order_details_car_info"
+            android:text="@string/order_details_car_licence_text"
+            android:textSize="14sp"
+            android:textColor="@drawable/text_color_black" />
+
+        <TextView
+            android:id="@+id/order_details_car_displacement_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/order_details_car_licence_text"
+            android:layout_below="@id/order_details_car_licence_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/order_details_car_displacement_text"
+            android:textSize="14sp"
+            android:textColor="@drawable/text_color_black" />
+
+        <TextView
+            android:id="@+id/order_details_car_model_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_details_car_info"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/order_details_car_info"
+            android:text="@string/order_details_car_model_text"
+            android:textColor="@drawable/text_color_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/order_details_car_licence_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignBottom="@id/order_details_car_licence_text"
+            android:layout_toRightOf="@id/order_details_car_licence_text"
+         
+            android:textColor="@drawable/text_color_black"
+            android:textSize="14sp" 
+             android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/order_details_car_displacement_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/order_details_car_displacement_text"
+            android:layout_toRightOf="@id/order_details_car_displacement_text"
+            android:gravity="center"
+          
+            android:textColor="@drawable/text_color_black"
+            android:textSize="14sp" 
+             android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/order_details_car_model_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/order_details_car_model_text"
+            android:layout_toRightOf="@id/order_details_car_model_text"
+            
+            android:textColor="@drawable/text_color_black"
+            android:textSize="14sp"
+            android:layout_marginLeft="50dp" />
+
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/order_details_car_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" 
+        android:background="@drawable/divider_color"
+        android:layout_below="@id/order_details_car_layout">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_details_combo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/order_details_car_divider"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/order_details_combo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/order_details_combo_text" />
+
+        <TextView
+            android:id="@+id/order_details_combo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/order_details_combo_text"
+            android:layout_alignBottom="@+id/order_details_combo_text"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/order_details_combo_text"
+           />
+
+        <TextView
+            android:id="@+id/order_details_combo_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/order_details_combo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+             />
+
+        <TextView
+            android:id="@+id/order_details_combo_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/order_details_combo_details"
+            android:layout_alignBottom="@+id/order_details_combo_details"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/order_details_combo_details"
+             />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_details_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/order_details_combo_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/The_app_main_color"
+        android:onClick="onClick" >
+
+        <TextView
+            android:id="@+id/order_details_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@drawable/text_color_black" 
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+       <RelativeLayout
+        android:id="@+id/load_yout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/order_details_status_layout"
+        android:layout_marginTop="25dp">
+
+        <ProgressBar
+            android:id="@+id/loadProgressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:indeterminateDrawable="@drawable/progressbar" />
+
+        <TextView
+            android:id="@+id/load_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/loadProgressBar"
+            android:text="正在加载" 
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

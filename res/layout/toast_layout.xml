@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="150dp" 
+    android:id="@+id/toast_layout"
+    android:background="@drawable/text_color_black"
+    android:alpha="100">
+ <RelativeLayout 
+     android:layout_width="180dp"
+    android:layout_height="200dp" 
+    android:id="@+id/toast_layout"
+    android:background="@drawable/text_color_black"
+    android:alpha="100" >
+    <ImageView 
+    android:id="@+id/toast_image"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_centerInParent="true"
+    />
+ </RelativeLayout>   
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c1311"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_service"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="itemClick"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/ll_service"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/service_booking"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/service_booking"
+                android:textColor="#fff000"
+                android:textSize="16dp"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="48dp"
+            android:layout_toRightOf="@id/ll_service"
+            android:text="@string/service_booking_cn"
+            android:textColor="#fff000"
+            android:textSize="40dp"
+            tools:ignore="SpUsage" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/ll_service"
+            android:background="#fff000"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_car"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginLeft="16dp"
+        android:onClick="itemClick"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/ll_car"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/my_car"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/my_car"
+                android:textColor="#fff000"
+                android:textSize="16dp"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="48dp"
+            android:layout_toRightOf="@id/ll_car"
+            android:text="@string/my_car_cn"
+            android:textColor="#fff000"
+            android:textSize="40dp"
+            tools:ignore="SpUsage" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/ll_car"
+            android:background="#fff000"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_order"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginLeft="16dp"
+        android:onClick="itemClick"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/ll_order"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/order_list"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/order_list"
+                android:textColor="#fff000"
+                android:textSize="16dp"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="48dp"
+            android:layout_toRightOf="@id/ll_order"
+            android:text="@string/order_list_cn"
+            android:textColor="#fff000"
+            android:textSize="40dp"
+            tools:ignore="SpUsage" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/ll_order"
+            android:background="#fff000"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_promotion"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginLeft="16dp"
+        android:onClick="itemClick"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/ll_promotion"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/promotion"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/promotion"
+                android:textColor="#fff000"
+                android:textSize="16dp"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="48dp"
+            android:layout_toRightOf="@id/ll_promotion"
+            android:text="@string/promotion_cn"
+            android:textColor="#fff000"
+            android:textSize="40dp"
+            tools:ignore="SpUsage" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/ll_promotion"
+            android:background="#fff000"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</LinearLayout>

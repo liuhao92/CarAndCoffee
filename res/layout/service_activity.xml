@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/com.carandcoffee"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_color_gray" >
+
+    <RelativeLayout
+        android:id="@+id/send_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:focusableInTouchMode="true"
+        android:minHeight="60dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/send_text_message"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:onClick="itemclick" />
+
+        <EditText
+            android:id="@+id/send_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/send_text_message"
+            android:background="@drawable/text_edit_bg"
+            android:minHeight="40dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/send_more_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:focusableInTouchMode="true" >
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/text_color_black" >
+
+            <ImageView
+                android:id="@+id/chang_to_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:onClick="itemclick"
+                android:src="@drawable/text_edit_bt_bg" />
+
+            <ImageView
+                android:id="@+id/photo_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/chang_to_text_layout"
+                android:layout_marginRight="25dp"
+                android:onClick="itemclick"
+                android:src="@drawable/add_image_bt" />
+
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/danhuangs" />
+
+                <ImageView
+                    android:id="@+id/voice_send_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/voice_buttom_bg"
+                    android:clickable="false" />
+
+                <ImageView
+                    android:id="@+id/dianboquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/dianboquan" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/top_layout"
+            android:background="@drawable/The_app_main_color" >
+
+            <Button
+                android:id="@+id/promotion_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:text="优惠\n套餐"
+                android:textColor="@drawable/text_color_black"
+                android:textSize="40dp"
+                android:onClick="itemclick"
+                android:background="@drawable/The_app_main_color" />
+            
+           
+
+            <Button
+                android:id="@+id/youli_huodong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="43dp"
+                android:text="有礼\n活动"
+                android:textColor="@drawable/text_color_black"
+                android:textSize="40dp" 
+                android:background="@drawable/The_app_main_color"
+                android:onClick="itemclick"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="2dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/send_more_message_layout"
+        android:layout_alignParentTop="true"
+        android:divider="@drawable/body_color_gray"
+        android:dividerHeight="6dp"
+        android:drawSelectorOnTop="false"
+        />
+
+    <RelativeLayout
+        android:id="@+id/animation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/send_more_message_layout"
+        android:background="@drawable/text_color_black"
+          android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/yuandian1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-20dp"
+            android:background="@drawable/yuandian" />
+
+
+        <ImageView
+            android:id="@+id/yuandian2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-20dp"
+            android:background="@drawable/yuandian" />
+
+        <ImageView
+            android:id="@+id/yuandian3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-20dp"
+            android:background="@drawable/yuandian" />
+
+        <ImageView
+            android:id="@+id/yuandian4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yuandian" />
+
+        <ImageView
+            android:id="@+id/yuandian5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yuandian" />
+
+        <ImageView
+            android:id="@+id/yuandian6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yuandian" />
+
+        <TextView
+            android:id="@+id/cancel_voice_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/cancel_voice"
+            android:textColor="@drawable/The_app_main_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/luying_time_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel_voice_text"
+            android:layout_centerHorizontal="true"
+            android:text="00:00"
+            android:textColor="@drawable/The_app_main_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/The_app_main_color" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/note_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/The_app_main_color"
+        android:text="松手加载历史消息"
+        android:textColor="@drawable/text_color_black"
+        android:visibility="gone" />
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/time_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/yuanjiao"
+        
+        android:textColor="@drawable/text_color_black"
+         />
+
+</RelativeLayout>

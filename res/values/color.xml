@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item name="The_app_main_color" type="drawable">#FFF000</item>
+<item name="titlebar_button_pressed_color" type="drawable">#838287</item>
+<item name="text_color_black" type="drawable">#1c1311</item>
+<item name="text_color_gray" type="drawable">#7d7f87</item>
+<item name="body_color_gray" type="drawable">#F2F2F2</item>
+<item name="divider_color" type="drawable">#e6e6e6</item>
+<item name="white" type="drawable">#ffffff</item>
+
+<color name="transparent">#00000000</color>
+
+    <!-- drop down list header font color -->
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#000000</color>
+</resources>
